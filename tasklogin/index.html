@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" width="device-width" initial-scale="1.0">
+<title>loginpage</title>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .box {
+        border: 1px solid white;
+  
+        height: 400px;
+        width: 450px;
+        place-content: center;
+        background:transparent;
+        border-radius: 10px;
+       
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        backdrop-filter: blur(3px);
+      }
+     .title
+     {
+        color:lightgrey;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     }
+    .container {
+    height:100vh;
+    
+background-image: url("pexels-instawalli-176851.jpg");
+       background-size: cover;
+    
+       background-repeat: no-repeat;
+      }
+      .input-field{
+        position: relative;
+        left:10px;
+        top:15px;
+        font-size:larger;
+        color:white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+      }
+      .input-fie{
+        position: relative;
+        top:30px;
+        left:10px;
+        font-size:larger;
+        color:white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+      }
+      a{
+        position: relative;
+        top:50px;
+        left:5px;
+        text-decoration: none;
+        color:white;
+        font-size:20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      input[type=text], input[type=password] {
+       
+      
+       color:white;
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 5px;
+        border-radius: 15px; 
+        border: 1px solid white;
+        background-color:transparent; 
+        
+        font-size: 16px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 1.0;
+        
+        transition: all 0.3s ease;
+      
+
+      }
+      
+    .submit-btn
+    {
+        position: absolute;
+        left:36.5%;
+        top:65%;
+        font-size: 30px;
+        background-color:transparent;
+        border: 1px solid white;
+        color: #fff;
+        padding:15px 15px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+       
+    }
+    .sign
+    {
+        position: absolute;
+        left:39.4%;
+        top:85%;
+        font-size: 20px;
+        background-color:transparent;
+        border: 1px solid white;
+        color: #fff;
+        padding:10px 10px;
+        border-radius: 9px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out; 
+    }
+    .sign:hover
+    {
+      
+       background: linear-gradient(to right, #121430,black);
+       color:rgb(139, 168, 235);
+    }
+    
+    .submit-btn:hover{
+        background:black;
+        color:rgb(139, 168, 235);
+    }
+    a:hover
+    {
+        background: #121430;
+        color:rgb(139, 168, 235);
+    }
+    
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <h1 class="title">LOGIN</h1>
+       <form action="#" method="post">
+        <div class="input-field">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-fie">
+            <label for="password">Password</label>
+           <input type="password" id="password" name="password" required>
+        </div>
+        <input type="submit" value="Login" class="submit-btn" required>
+        <input type="button" value="signup" class="sign">
+       </form>
+       <a href="#" class="password">forgot password?</a>
+    </div>
+</div>
+
+</body>
+</html>
